@@ -1,0 +1,7 @@
+<%# app/views/records/index.html.erb %>
+
+<%# react-rails gem helper %>
+<%# With this markup present, react_ujs will detect we are trying to render a React component and will instantiate it, including the properties we sent through react_component, in our case, the contents of @records. %>
+
+<%= react_component 'Records', { data: @records } %>
+
